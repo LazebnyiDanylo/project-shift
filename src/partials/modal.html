@@ -1,4 +1,137 @@
-<div>
-    <h3>hello
-    </h3>
+<div class="backdrop " data-modal>
+<div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-btn-icon" width="24" height="24">
+          <use href=""></use>
+        </svg>
+      </button>
+      <p class="modal-title">Your Order</p>
+
+      <ul class="modal-list">
+        <li class="modal-item">
+          <div>
+            <div class="modal-check">
+              <input
+                value="true"
+                id="user-privacy"
+                type="checkbox"
+                name="user-privacy"
+                class="modal-check visually-hidden"
+                required
+              />
+              <label for="user-privacy" class="check-text">
+                <span class="privacy-check">
+                  <svg class="check-icon" width="16" height="16">
+                    <use href=""></use>
+                  </svg>
+                </span>
+              </label>
+              <h3>Cabbage Basket</h3>
+              <p>Plant</p>
+              <img src="" alt="">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div class="modal-check">
+              <input
+                value="true"
+                id="user-privacy"
+                type="checkbox"
+                name="user-privacy"
+                class="modal-check visually-hidden"
+                required
+              />
+              <label for="user-privacy" class="check-text">
+                <span class="privacy-check">
+                  <svg class="check-icon" width="16" height="16">
+                    <use href=""></use>
+                  </svg>
+                </span>
+              </label>
+              <h3>Tomato Basket</h3>
+              <p>Plant</p>
+              <img src="" alt="">
+            </div>
+          </div>
+        </li>
+        <li>
+          <div>
+            <div class="modal-check">
+              <input
+                value="true"
+                id="user-privacy"
+                type="checkbox"
+                name="user-privacy"
+                class="modal-check visually-hidden"
+                required
+              />
+              <label for="user-privacy" class="check-text">
+                <span class="privacy-check">
+                  <svg class="check-icon" width="16" height="16">
+                    <use href=""></use>
+                  </svg>
+                </span>
+              </label>
+              <h3>Vegetables Basket</h3>
+              <p>Plant</p>
+              <img src="" alt="">
+            </div>
+            
+          </div>
+        </li>
+      </ul>
+      <div class="modal-field">
+        <label for="user-name" class="input-label">Enter full name...</label>
+        <div class="input-wrap">
+          <input
+            type="text"
+            name="user-name"
+            id="user-name"
+            class="modal-input"
+            minlength="2"
+            maxlength="10"
+            required
+          />
+      
+        </div>
+      </div>
+      <div class="modal-field">
+        <label for="user-phone" class="input-label">Phone</label>
+        <div class="input-wrap">
+          <input
+            type="tel"
+            name="user-phone"
+            id="user-phone"
+            class="modal-input"
+            required
+          />
+          
+        </div>
+      </div>
+      <div class="modal-field">
+        <label for="user-email" class="input-label">Email</label>
+        <div class="input-wrap">
+          <input
+            type="email"
+            name="user-email"
+            id="user-email"
+            class="modal-input"
+            required
+          />
+        </div>
+      </div>
+      <div class="modal-field-comment">
+        <label for="user-comment" class="input-label">Comment</label>
+
+        <textarea
+          name="user-comment"
+          id="user-comment"
+          class="modal-comment"
+          placeholder="Text input"
+        ></textarea>
+      </div>
+</div>
+
 </div>
