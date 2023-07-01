@@ -7,3 +7,15 @@
   --pink-background: #faf3e7;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+body {
+  font-family: 'DM Sans', sans-serif;
+  color: var(--title-color);
+  background-color: #ffffff;
+}
+
+.container {
+  max-width: 375px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
