@@ -22,13 +22,21 @@
             <label for="user-privacy" class="modal-check-label">
               <span class="privacy-check">
                 <svg class="check-icon" width="16" height="16">
-                  <use href="./img/icons.svg#icon-check-box"></use>
+                  <use href="./img/icons.svg#icon-Group-32"></use>
                 </svg>
               </span>
             </label>
+          </div>
             <h3 class="modal-title">Cabbage Basket</h3>
             <p class="modal-text">Plant</p>
             <picture>
+              <source
+                srcset="
+                  ./img/modal-img/cabbage-mob.png 1x,
+                  ./img/modal-img/cabbage-mob-2x.png 2x
+                "
+                media="(max-width: 768px)"
+              />
               <source
                 srcset="
                   ./img/modal-img/cabbage.png 1x,
@@ -43,21 +51,67 @@
                 "
                 media="(min-width: 768px)"
               />
+              
+              <img
+              class=" modal-img"
+                src="./img/modal-img/cabbage.png"
+                alt="cabbage"
+              />
+            </picture>
+          
+        </div>
+      </li>
+      <li class="modal-item">
+        <div class="modal-item-box">
+          <div class="modal-check">
+            <input
+              value="true"
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              class="modal-check-input visually-hidden"
+              required
+            />
+            <label for="user-privacy" class="modal-check-label">
+              <span class="privacy-check">
+                <svg class="check-icon" width="16" height="16">
+                  <use href="./img/icons.svg#icon-check-box"></use>
+                </svg>
+              </span>
+            </label>
+          </div>
+            <h3 class="modal-title">Tomato Basket</h3>
+            <p class="modal-text">Plant</p>
+            <picture>
               <source
                 srcset="
-                  ./img/modal-img/cabbage-mob.png 1x,
-                  ./img/modal-img/cabbage-mob-2x.png 2x
+                  ./img/modal-img/tomato-mob.png 1x,
+                  ./img/modal-img/tomato-mob-2x.png 2x
                 "
                 media="(max-width: 768px)"
               />
+              <source
+                srcset="
+                  ./img/modal-img/tomato.png 1x,
+                  ./img/modal-img/tomato-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/modal-img/tomato-tab.png 1x,
+                  ./img/modal-img/tomato-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              
               <img
-                src="./img/modal-img/cabbage.png"
-                alt="cabbage"
-                width="243"
-                height="200"
+              class=" modal-img"
+                src="./img/modal-img/tomato.png"
+                alt="tomato"
               />
             </picture>
-          </div>
+          
         </div>
       </li>
       <li class="modal-item">
@@ -78,34 +132,39 @@
                 </svg>
               </span>
             </label>
-            <h3 class="modal-title">Tomato Basket</h3>
-            <p class="modal-text">Plant</p>
-            <img src="./img/modal-img/tomato.png" alt="tomato" />
           </div>
-        </div>
-      </li>
-      <li class="modal-item">
-        <div class="modal-item-box">
-          <div class="modal-check">
-            <input
-              value="true"
-              id="user-privacy"
-              type="checkbox"
-              name="user-privacy"
-              class="modal-check-input visually-hidden"
-              required
-            />
-            <label for="user-privacy" class="modal-check-label">
-              <span class="privacy-check">
-                <svg class="check-icon" width="16" height="16">
-                  <use href="./img/icons.svg#icon-check-box"></use>
-                </svg>
-              </span>
-            </label>
             <h3 class="modal-title">Vegetables Basket</h3>
             <p class="modal-text">Plant</p>
-            <img src="../img/modal-img/vegetables.png" alt="vegetables" />
-          </div>
+            <picture>
+              <source
+                srcset="
+                  ./img/modal-img/vegetables-mob.png 1x,
+                  ./img/modal-img/vegetables-mob-2x.png 2x
+                "
+                media="(max-width: 768px)"
+              />
+              <source
+                srcset="
+                  ./img/modal-img/vegetables.png 1x,
+                  ./img/modal-img/vegetables-2x.png 2x
+                "
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="
+                  ./img/modal-img/vegetables-tab.png 1x,
+                  ./img/modal-img/vegetables-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
+              />
+              
+              <img
+              class=" modal-img"
+                src="./img/modal-img/vegetables.png"
+                alt="vegetables"
+              />
+            </picture>
+          
         </div>
       </li>
     </ul>
@@ -166,7 +225,7 @@
       <button type="submit" class="modal-send-btn">Submit</button>
 
     </form>
-    <picture>
+    <picture class="girl-img">
       <source
         srcset="
         ./img/modal-img/girl.png 1x,
@@ -190,3 +249,5 @@
     </picture>
   </div>
 </div>
+
+

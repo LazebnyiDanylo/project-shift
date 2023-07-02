@@ -5,6 +5,9 @@
 <path d="M19.807 10.527a1.2 1.2 0 1 1 1.987 1.347l-6.508 9.6a1.2 1.2 0 0 1-1.986 0l-3.09-4.56a1.2 1.2 0 1 1 1.986-1.347l2.098 3.095 5.515-8.135z"/>
 <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3" d="M8 1.5h16A6.5 6.5 0 0 1 30.5 8v16a6.5 6.5 0 0 1-6.5 6.5H8A6.5 6.5 0 0 1 1.5 24V8A6.5 6.5 0 0 1 8 1.5z"/>
 </symbol>
+<symbol id="icon-Group-32" viewBox="0 0 32 32">
+<path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="3" d="M8 1.5h16c3.59 0 6.5 2.91 6.5 6.5v16c0 3.59-2.91 6.5-6.5 6.5h-16c-3.59 0-6.5-2.91-6.5-6.5v-16c0-3.59 2.91-6.5 6.5-6.5z"></path>
+</symbol>
 
 <symbol id="icon-close-button" viewBox="0 0 32 32">
 <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="3.4286" d="M24 8 8 24"/>
