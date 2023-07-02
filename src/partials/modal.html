@@ -1,89 +1,118 @@
-<div class="backdrop " data-modal>
-<div class="modal">
+<div class="backdrop" data-modal>
+  <div class="modal">
     <button type="button" class="modal-close-btn" data-modal-close>
-        <svg class="modal-close-btn-icon" width="24" height="24">
-          <use href=""></use>
-        </svg>
-      </button>
-      <p class="modal-title">Your Order</p>
+      <svg class="modal-close-btn-icon" width="24" height="24">
+        <use href="./img/icons.svg#icon-close-button"></use>
+      </svg>
+    </button>
+    <h2 class="modal-top-text">Your Order</h2>
 
-      <ul class="modal-list">
-        <li class="modal-item">
-          <div>
-            <div class="modal-check">
-              <input
-                value="true"
-                id="user-privacy"
-                type="checkbox"
-                name="user-privacy"
-                class="modal-check visually-hidden"
-                required
+    <ul class="modal-list">
+      <li class="modal-item">
+        <div class="modal-item-box">
+          <div class="modal-check">
+            <input
+              value="true"
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              class="modal-check-input visually-hidden"
+              required
+            />
+            <label for="user-privacy" class="modal-check-label">
+              <span class="privacy-check">
+                <svg class="check-icon" width="16" height="16">
+                  <use href="./img/icons.svg#icon-check-box"></use>
+                </svg>
+              </span>
+            </label>
+            <h3 class="modal-title">Cabbage Basket</h3>
+            <p class="modal-text">Plant</p>
+            <picture>
+              <source
+                srcset="
+                  ./img/modal-img/cabbage.png 1x,
+                  ./img/modal-img/cabbage-2x.png 2x
+                "
+                media="(min-width: 1280px)"
               />
-              <label for="user-privacy" class="check-text">
-                <span class="privacy-check">
-                  <svg class="check-icon" width="16" height="16">
-                    <use href=""></use>
-                  </svg>
-                </span>
-              </label>
-              <h3>Cabbage Basket</h3>
-              <p>Plant</p>
-              <img src="" alt="">
-            </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <div class="modal-check">
-              <input
-                value="true"
-                id="user-privacy"
-                type="checkbox"
-                name="user-privacy"
-                class="modal-check visually-hidden"
-                required
+              <source
+                srcset="
+                  ./img/modal-img/cabbage-tab.png 1x,
+                  ./img/modal-img/cabbage-tab-2x.png 2x
+                "
+                media="(min-width: 768px)"
               />
-              <label for="user-privacy" class="check-text">
-                <span class="privacy-check">
-                  <svg class="check-icon" width="16" height="16">
-                    <use href=""></use>
-                  </svg>
-                </span>
-              </label>
-              <h3>Tomato Basket</h3>
-              <p>Plant</p>
-              <img src="" alt="">
-            </div>
-          </div>
-        </li>
-        <li>
-          <div>
-            <div class="modal-check">
-              <input
-                value="true"
-                id="user-privacy"
-                type="checkbox"
-                name="user-privacy"
-                class="modal-check visually-hidden"
-                required
+              <source
+                srcset="
+                  ./img/modal-img/cabbage-mob.png 1x,
+                  ./img/modal-img/cabbage-mob-2x.png 2x
+                "
+                media="(max-width: 768px)"
               />
-              <label for="user-privacy" class="check-text">
-                <span class="privacy-check">
-                  <svg class="check-icon" width="16" height="16">
-                    <use href=""></use>
-                  </svg>
-                </span>
-              </label>
-              <h3>Vegetables Basket</h3>
-              <p>Plant</p>
-              <img src="" alt="">
-            </div>
-            
+              <img
+                src="./img/modal-img/cabbage.png"
+                alt="cabbage"
+                width="243"
+                height="200"
+              />
+            </picture>
           </div>
-        </li>
-      </ul>
+        </div>
+      </li>
+      <li class="modal-item">
+        <div class="modal-item-box">
+          <div class="modal-check">
+            <input
+              value="true"
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              class="modal-check-input visually-hidden"
+              required
+            />
+            <label for="user-privacy" class="modal-check-label">
+              <span class="privacy-check">
+                <svg class="check-icon" width="16" height="16">
+                  <use href="./img/icons.svg#icon-check-box"></use>
+                </svg>
+              </span>
+            </label>
+            <h3 class="modal-title">Tomato Basket</h3>
+            <p class="modal-text">Plant</p>
+            <img src="./img/modal-img/tomato.png" alt="tomato" />
+          </div>
+        </div>
+      </li>
+      <li class="modal-item">
+        <div class="modal-item-box">
+          <div class="modal-check">
+            <input
+              value="true"
+              id="user-privacy"
+              type="checkbox"
+              name="user-privacy"
+              class="modal-check-input visually-hidden"
+              required
+            />
+            <label for="user-privacy" class="modal-check-label">
+              <span class="privacy-check">
+                <svg class="check-icon" width="16" height="16">
+                  <use href="./img/icons.svg#icon-check-box"></use>
+                </svg>
+              </span>
+            </label>
+            <h3 class="modal-title">Vegetables Basket</h3>
+            <p class="modal-text">Plant</p>
+            <img src="../img/modal-img/vegetables.png" alt="vegetables" />
+          </div>
+        </div>
+      </li>
+    </ul>
+
+    <form class="modal-form">
       <div class="modal-field">
-        <label for="user-name" class="input-label">Enter full name...</label>
+        <label for="user-name" class="input-label"></label>
         <div class="input-wrap">
           <input
             type="text"
@@ -92,46 +121,72 @@
             class="modal-input"
             minlength="2"
             maxlength="10"
+            placeholder="Enter full name..."
             required
           />
-      
         </div>
       </div>
       <div class="modal-field">
-        <label for="user-phone" class="input-label">Phone</label>
-        <div class="input-wrap">
-          <input
-            type="tel"
-            name="user-phone"
-            id="user-phone"
-            class="modal-input"
-            required
-          />
-          
-        </div>
-      </div>
-      <div class="modal-field">
-        <label for="user-email" class="input-label">Email</label>
+        <label for="user-email" class="input-label"></label>
         <div class="input-wrap">
           <input
             type="email"
             name="user-email"
             id="user-email"
             class="modal-input"
+            placeholder="Enter email..."
+            required
+          />
+        </div>
+      </div>
+      <div class="modal-field">
+        <label for="user-card" class="input-label"></label>
+        <div class="input-wrap">
+          <input
+            type="card"
+            name="user-card"
+            id="user-card"
+            class="modal-input"
+            placeholder="Enter card.."
             required
           />
         </div>
       </div>
       <div class="modal-field-comment">
-        <label for="user-comment" class="input-label">Comment</label>
+        <label for="user-comment" class="input-label"></label>
 
         <textarea
           name="user-comment"
           id="user-comment"
           class="modal-comment"
-          placeholder="Text input"
+          placeholder="Enter comments..."
         ></textarea>
       </div>
-</div>
 
+      <button type="submit" class="modal-send-btn">Submit</button>
+
+    </form>
+    <picture>
+      <source
+        srcset="
+        ./img/modal-img/girl.png 1x,
+        ./img/modal-img/girl-2x.png 2x
+        "
+        media="(min-width: 1280px)"
+      />
+      <source
+        srcset="
+        ./img/modal-img/girl.png 1x,
+        ./img/modal-img/girl-2x.png 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <img
+        src="../img/modal-img/girl.png"
+        alt="girl"
+        width="444"
+        height="413"
+      />
+    </picture>
+  </div>
 </div>
