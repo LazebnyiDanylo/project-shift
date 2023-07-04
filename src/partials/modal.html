@@ -9,24 +9,23 @@
 
     <ul class="modal-list">
       <li class="modal-item">
+        <div class="modal-check">
+          <input 
+          type="checkbox"
+          id="cabbage basket"
+          name="product"
+          value="cabbage"
+          class="modal-check visually-hidden"
+          >
+          <label for="cabbage" class="check-cast">
+            <span>
+              <svg class="check-icon" width="6" height="6">
+                <use href="./img/icons.svg#icon-access"></use>
+              </svg>
+            </span>
+          </label>
+        </div>
         <div class="modal-item-box">
-          <div class="modal-check">
-            <input
-              value="true"
-              id="user-privacy"
-              type="checkbox"
-              name="user-privacy"
-              class="modal-check-input visually-hidden"
-              required
-            />
-            <label for="user-privacy" class="modal-check-label">
-              <span class="privacy-check">
-                <svg class="check-icon" width="16" height="16">
-                  <use href="./img/icons.svg#icon-Group-32"></use>
-                </svg>
-              </span>
-            </label>
-          </div>
             <h3 class="modal-title">Cabbage Basket</h3>
             <p class="modal-text">Plant</p>
             <picture>
@@ -62,20 +61,20 @@
         </div>
       </li>
       <li class="modal-item">
+
         <div class="modal-item-box">
           <div class="modal-check">
-            <input
-              value="true"
-              id="user-privacy"
-              type="checkbox"
-              name="user-privacy"
-              class="modal-check-input visually-hidden"
-              required
-            />
-            <label for="user-privacy" class="modal-check-label">
-              <span class="privacy-check">
-                <svg class="check-icon" width="16" height="16">
-                  <use href="./img/icons.svg#icon-check-box"></use>
+            <input 
+            type="checkbox"
+            id="tomato basket"
+            name="product"
+            value="tomato"
+            class="modal-check "
+            >
+            <label for="tomato" class="check-cast">
+              <span>
+                <svg class="check-icon" width="6" height="6">
+                  <use href="./img/icons.svg#icon-access"></use>
                 </svg>
               </span>
             </label>
@@ -113,28 +112,30 @@
             </picture>
           
         </div>
+
       </li>
       <li class="modal-item">
         <div class="modal-item-box">
-          <div class="modal-check">
-            <input
-              value="true"
-              id="user-privacy"
-              type="checkbox"
-              name="user-privacy"
-              class="modal-check-input visually-hidden"
-              required
-            />
-            <label for="user-privacy" class="modal-check-label">
-              <span class="privacy-check">
-                <svg class="check-icon" width="16" height="16">
-                  <use href="./img/icons.svg#icon-check-box"></use>
+            <input 
+            type="checkbox"
+            id="vegetables basket"
+            name="product"
+            value="vegetables"
+            class="modal-check visually-hidden"
+            >
+            <label for="vegetables" class="check-cast">
+              <span>
+                <svg class="check-icon" width="6" height="6">
+                  <use href="./img/icons.svg#icon-access"></use>
                 </svg>
               </span>
             </label>
-          </div>
+            
+            <div class="modal-text-box">
             <h3 class="modal-title">Vegetables Basket</h3>
             <p class="modal-text">Plant</p>
+            </div>
+            
             <picture>
               <source
                 srcset="
@@ -166,6 +167,7 @@
             </picture>
           
         </div>
+
       </li>
     </ul>
 
@@ -202,7 +204,7 @@
         <label for="user-card" class="input-label"></label>
         <div class="input-wrap">
           <input
-            type="card"
+            type="number"
             name="user-card"
             id="user-card"
             class="modal-input"
