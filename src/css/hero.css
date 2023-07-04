@@ -6,12 +6,13 @@ img {
 }
 
 .hero {
-    width: 375px;
-    padding: 48px 0 20px 20px  ;
+    max-width: 375px;
+padding-top: 48px;
+padding-bottom: 20px;
+height: auto;
 }
 
 .hero-box {
-    margin-bottom: 14px;
 }
 
 .hero-list {
@@ -30,7 +31,7 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 16px;
+    margin-bottom: 14px;
 }
 
 .hero-pfoto:not(:first-child){
@@ -162,6 +163,9 @@ margin-bottom: 8px;
 .shop-now {
     display: flex;
     flex-direction: column;
+    flex-wrap: wrap;
+    row-gap: 4px;
+    margin-top: 16px;
 }
 .hero-button-tex {
     color: #FFF;
@@ -189,9 +193,10 @@ padding:  8px 14px;
 .hero-btn{
     display: flex;
     flex-direction: row;
-gap: 4px;
+column-gap: 4px;
+row-gap: 4px;
 justify-content: flex-end;
-margin-bottom: 4px;
+
 }
 
 .hero-button-tex:hover,
@@ -232,6 +237,7 @@ flex-direction: column;
 justify-content: center;
 flex-shrink: 0;
 transition: background var(--transition), color var(--transition) ;
+margin-bottom: 8px;
 }
 
 .hero-button-main:hover,
@@ -264,13 +270,11 @@ transition: background var(--transition), color var(--transition) ;
 @media screen and (min-width: 768px){
     .hero{
         width: 768px;
-        padding: 66px 32px 32px 32px;
-       
     }
 
     .hero-box{
-        margin-bottom: 20px;
-
+       padding-bottom: 32px;
+       padding-top: 64px;
     }
 
     .hero-text{
@@ -281,7 +285,9 @@ transition: background var(--transition), color var(--transition) ;
     }
 
     .hero-pfoto{
-        margin-bottom: 20px;
+        margin-bottom: 18px;
+        width: 54px;
+        height: 54px;
     }
       
       .hero-pfoto:nth-child(2){
@@ -297,6 +303,11 @@ transition: background var(--transition), color var(--transition) ;
       .hero-pfoto:nth-child(4){
           left: 102px;
       
+      }
+
+      .shop-now{
+        margin-top: 8px;
+        row-gap: 8px;
       }
 
     .paragraf{
@@ -320,10 +331,7 @@ transition: background var(--transition), color var(--transition) ;
         line-height: 1.6;
         padding: 10px 20px;
     }
-    .hero-pfoto{
-        width: 54px;
-      height: 54px;
-    }
+  
 
     .hero-link{
         width: 50px;
@@ -342,7 +350,7 @@ transition: background var(--transition), color var(--transition) ;
 
 @media screen and (min-width: 1280px){
     .hero{
-padding-top: 127px;
+padding-top: 132px;
 width: 1280px;
     }
 
@@ -363,6 +371,10 @@ width: 1280px;
     .hero-btn{
         column-gap: 8px;
         row-gap:8px ;
+    }
+
+    .shop-now{
+        margin-top: 21px;
     }
 
 
