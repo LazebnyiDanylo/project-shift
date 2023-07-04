@@ -1,0 +1,248 @@
+/* MOB STYLES */
+
+.recall-container {
+  padding: 80px 20px;
+  width: 100%;
+}
+
+.recall-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.recal-title {
+  color: var(--title-color);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 1.16;
+  letter-spacing: -0.96px;
+  text-transform: uppercase;
+  max-width: 310px;
+  margin-bottom: 20px;
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+}
+.recall-item {
+  color: var(--title-color);
+  text-shadow: 0 4px 70px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+  line-height: 1.28;
+  letter-spacing: -0.56px;
+
+  text-align: center;
+
+  margin-bottom: 40px;
+  max-width: 321px;
+}
+
+.recall-form {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 48px;
+
+  border-radius: 100px;
+  border: 1px solid rgba(20, 20, 20, 0.3);
+
+  margin-bottom: 40px;
+}
+
+label {
+  width: 100%;
+}
+.recall-input {
+  padding: 15px 130px 15px 24px;
+  width: 100%;
+  height: 48px;
+
+  outline: transparent;
+  border-radius: 100px;
+  border: 1px solid rgba(20, 20, 20, 0.3);
+}
+
+.recall-input::placeholder {
+  color: #c1bdbd;
+  font-size: 14px;
+  font-family: DM Sans;
+
+  line-height: 1.28;
+  letter-spacing: 0.56px;
+}
+
+.btn-recall {
+  position: absolute;
+  right: -1px;
+  height: 48px;
+
+  border: none;
+  padding: 15px 35px;
+  border-radius: 100px;
+  background-color: var(--orange-color);
+
+  color: #fff;
+  font-size: 14px;
+  font-family: DM Sans;
+  line-height: 1.28;
+  letter-spacing: 0.56px;
+
+  transition: background-color var(--transition);
+}
+
+.btn-recall:hover,
+.btn-recall:focus {
+  background-color: var(--green-color);
+}
+
+.call-picture {
+  width: 100%;
+  height: 388px;
+  border-radius: 40px;
+  background-color: #faf3e7;
+  position: relative;
+  overflow: hidden;
+}
+
+.call-picture::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46"><image width="5.02" height="5.02" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAB3SURBVHgBXcotDoNAFATgN2/bIEgq6+vrEQgSPFdAcAMkjoRwCRLMHgSH4BR4/BrI7gMEP+FLRsxkQBs9VD83IyGBz2pp07CcoPvyK+I1dBAx4Dlna98x3QG+da+ACWLoQZwyrD5eJ4TxGjFmUdGdL93X/z1HXwGypicO4GCx4wAAAABJRU5ErkJggg==" /></svg>');
+  opacity: 0.5;
+  background-blend-mode: multiply;
+  background-position: left 31px top 5.3px;
+}
+
+.call-picture {
+  position: relative;
+}
+
+.call-picture > picture {
+  position: absolute;
+  bottom: 0;
+}
+
+@media screen and (min-width: 375px) {
+
+  .recall-form {
+    max-width: 335px;
+  }
+
+  .recall-input {
+    max-width: 335px;
+  }
+}
+
+/* TABLET STYLES */
+@media screen and (min-width: 768px) {
+  .recall-container {
+    max-width: 768px;
+    padding: 100px 32px 173px 32px;
+  }
+
+  .recal-title {
+    font-size: 40px;
+    line-height: 1.1;
+    letter-spacing: -1.6px;
+
+    max-width: 524px;
+  }
+
+  .recall-item {
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: -0.72px;
+
+    max-width: 499px;
+  }
+  .recall-form {
+    width: 350px;
+    margin-bottom: 80px;
+  }
+  label {
+    width: 350px;
+  }
+  .recall-input {
+    width: 350px;
+  }
+
+  .call-picture {
+    border-radius: 80px;
+    width: 704px;
+    height: 463px;
+  }
+
+  .call-picture > picture {
+    padding-right: 37px;
+    padding-left: 37px;
+  }
+}
+
+/* DEKSTOP STYLES */
+@media screen and (min-width: 1280px) {
+  .recall-container {
+    max-width: 1280px;
+    padding-top: 124px;
+    padding-bottom: 124px;
+
+    display: flex;
+    column-gap: 77px;
+  }
+
+  .recall-content {
+    max-width: 614px;
+    height: 340px;
+    align-items: flex-start;
+
+    align-self: center;
+  }
+  .recal-title {
+    font-size: 48px;
+    line-height: 1.04;
+    letter-spacing: -1.92px;
+
+    margin-bottom: 40px;
+
+    text-align: start;
+    max-width: 614px;
+  }
+
+  .recall-item {
+    margin-bottom: 80px;
+    text-align: start;
+    max-width: 523px;
+  }
+
+  .recall-form {
+    width: 523px;
+  }
+  label {
+    width: 523px;
+  }
+  .recall-input {
+    width: 523px;
+  }
+  .recall-content {
+    justify-content: flex-start;
+  }
+
+  .call-picture {
+    width: 525px;
+    height: 536px;
+  }
+
+  .call-picture > picture {
+    padding: 0;
+  }
+
+  .call-picture::before {
+    background-position: left 24.95px top 5.3px;
+  }
+}

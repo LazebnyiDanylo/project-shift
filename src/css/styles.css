@@ -5,18 +5,18 @@
 /* header */
 @import url('./header.css');
 /* hero */
-@import url('');
+@import url('./hero.css');
 /* how it works */
-@import url('');
+@import url('./how_it_works.css');
 /* vegetables */
-@import url('');
+@import url('./vegetables.css');
 /* we will call you */
-@import url('');
+@import url('./we-will-call-you.css');
 /* footer */
-@import url('');
+@import url('./footer.css');
 /* modal */
 @import url('');
 /* menu */
 @import url('mobile.modal.css');
 /* scroll btn */
-@import url('');
+@import url('./button-up.css');
