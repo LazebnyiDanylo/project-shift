@@ -80,16 +80,21 @@
   position: relative;
   height: 119px;
 }
+.check-cast{
+  display: flex;
+  align-items: center;
+}
+.label-check-cast{
+  position: absolute;
+  top: 14px;
+  right: 14px;
+}
 
 
 .modal-check{
   position: absolute;
   top: 14px;
   right: 14px;
-}
-.check-cast{
-  display: flex;
-  align-items: center;
 }
 
 .check-cast span{
@@ -105,47 +110,11 @@
 
 
 }
+
 .modal-check:checked + .check-cast span {
  fill: #A1C487;
-  
-
+ 
 }
-/* .modal-check:checked + .check-cast span {
-  background-color: aqua;
-  fill: #A1C487;
-} */
-
-
-
-/* .modal-check {
-  position: absolute;
-  top: 14px;
-  right: 14px;
-  background: transparent;
-}
-.modal-check-label{
-  background: transparent;
-}
-.privacy-check {
-  width: 16px;
-  height: 16px;
-  border: 1px solid rgba(46, 47, 66, 0.4);
-  border-radius: 2px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  margin-right: 8px;
-  fill: var(--green-color);
-  
-}
-.modal-check:checked +.privacy-check span {
-  border: none;
-  background: #404bbf;
-  fill: #f4f4fd;
-} */
-
-
-
 
 .modal-title {
   color: var(--title-color);
@@ -257,6 +226,11 @@ background: var(--orange-color);
     flex-direction: row;
     
   }
+  .check-cast span{
+    width: 20px;
+    height: 20px;
+  }
+
   .modal-item{
     width: calc((100% - 24px) / 3 );
   }
