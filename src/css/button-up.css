@@ -36,7 +36,7 @@
 .btn-up__icon {
 
   transform: rotate(225deg);
-  fill: aliceblue;
+  fill: var(--lite-green-color);
   stroke: black;
 
    @media screen and (min-width: 768px) {
