@@ -6,7 +6,8 @@ img {
 
 .recall-container {
   padding: 80px 20px;
-  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
 }
 
 .recall-content {
@@ -133,14 +134,12 @@ img {
   bottom: 0;
 }
 
-@media screen and (min-width: 375px) {
-  .recall-form {
-    max-width: 335px;
-  }
+.recall-form {
+  max-width: 335px;
+}
 
-  .recall-input {
-    max-width: 335px;
-  }
+.recall-input {
+  max-width: 335px;
 }
 
 /* TABLET STYLES */
@@ -148,8 +147,6 @@ img {
   .recall-container {
     max-width: 768px;
     padding: 100px 32px 173px 32px;
-
-    margin: 0 auto;
   }
 
   .recal-title {
@@ -195,7 +192,6 @@ img {
   .recall-container {
     max-width: 1280px;
     padding: 124px 32px;
-    margin: 0 auto;
 
     display: flex;
     column-gap: 77px;
