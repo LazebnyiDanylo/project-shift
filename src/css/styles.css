@@ -7,16 +7,16 @@
 /* hero */
 @import url('./hero.css');
 /* how it works */
-@import url('');
+@import url('./how_it_works.css');
 /* vegetables */
-@import url('');
+@import url('./vegetables.css');
 /* we will call you */
 @import url('./we-will-call-you.css');
 /* footer */
-@import url('');
+@import url('./footer.css');
 /* modal */
 @import url('./modal.css');
 /* menu */
 @import url('');
 /* scroll btn */
-@import url('');
+@import url('./button-up.css');

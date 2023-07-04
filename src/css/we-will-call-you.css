@@ -1,5 +1,9 @@
 /* MOB STYLES */
 
+img {
+  height: auto;
+}
+
 .recall-container {
   padding: 80px 20px;
   width: 100%;
@@ -130,10 +134,10 @@ label {
 }
 
 @media screen and (min-width: 375px) {
-  .container {
-    max-width: 375px;
-  }
+<<<<<<< HEAD
+=======
 
+>>>>>>> main
   .recall-form {
     max-width: 335px;
   }

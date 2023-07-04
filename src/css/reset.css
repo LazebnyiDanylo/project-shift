@@ -9,9 +9,6 @@ p {
   margin: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
 
 ul,
 ol {
@@ -32,7 +29,6 @@ button {
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }
 
 .is-hidden {
@@ -57,3 +53,6 @@ img {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+
+
+
