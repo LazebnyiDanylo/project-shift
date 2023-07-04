@@ -6,7 +6,6 @@
   --orange-color: #fc8a11;
   --pink-background: #faf3e7;
   --transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  
 }
 
 body {
@@ -24,8 +23,8 @@ body {
 
 @media screen and (min-width: 768px) {
   .container {
-  max-width: 768px;
-  } 
+    max-width: 768px;
+  }
 }
 
 @media screen and (min-width: 1280px) {
