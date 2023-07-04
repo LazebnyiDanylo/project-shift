@@ -109,6 +109,10 @@ border: none;
 
 
 
+@media screen and ( max-width : 374px) {
+.modal-menu { }
+}
+    
 
 
 
