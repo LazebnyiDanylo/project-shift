@@ -1,0 +1,102 @@
+
+
+  
+   
+@media screen and (max-width : 375px){
+    
+   
+
+
+.logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+.modal-menu {
+    top: 0;
+    max-width: 375px;
+    position: fixed;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    background-color: #A1C487;
+  
+   
+    justify-content: space-between;
+    overflow: auto;
+    transition: 600ms linear;
+    transform: translateX(0%);
+  }
+  
+  .is-hidden {
+    /* display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none; */
+    transition: transform 600ms linear;
+    transform: translateX(100%);
+  }
+  .menu-button {
+    position: absolute;
+    right: 20px;
+    border: none;
+ padding: 0;
+ background-color: transparent;
+ 
+ 
+}
+.logo-text {
+    font-family: 'DM Sans';
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.2 ;
+    color: var(--title-color);
+}
+.logo-icon {
+    position: relative;
+    top: 3px;
+    fill: var(--green-color);
+    margin-right: 8px;
+    margin-left: 20px;
+}
+.icon-modal-menu {
+border: none;
+  stroke: var(--green-color);
+}
+
+.mobil-menu-container {
+    background-color: #ffffff;
+}
+.modal-menu-link {
+    text-align: center;
+}
+.list-nav-modal {
+    margin-top: 124px;
+}
+.link-contact {
+    margin-bottom: 16px;
+    color: #ffffff;
+}
+.icon-basket {
+    fill: transparent;
+   stroke: #ffffff;
+ 
+}
+
+
+.shopping-link {  
+      border: none;
+    padding: 0;
+    background-color: transparent;
+  
+}
+.link-modal {
+    font-family: 'DM Sans';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+}
+
+
+
