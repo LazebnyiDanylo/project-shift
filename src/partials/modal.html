@@ -39,7 +39,7 @@
                   ./img/modal-img/cabbage-mob.png 1x,
                   ./img/modal-img/cabbage-mob-2x.png 2x
                 "
-                media="(max-width: 768px)"
+                media="(max-width: 767px)"
               />
               <source
                 srcset="
@@ -97,7 +97,7 @@
                   ./img/modal-img/tomato-mob.png 1x,
                   ./img/modal-img/tomato-mob-2x.png 2x
                 "
-                media="(max-width: 768px)"
+                media="(max-width: 767px)"
               />
               <source
                 srcset="
@@ -152,7 +152,7 @@
                   ./img/modal-img/vegetables-mob.png 1x,
                   ./img/modal-img/vegetables-mob-2x.png 2x
                 "
-                media="(max-width: 768px)"
+                media="(max-width: 767px)"
               />
               <source
                 srcset="
@@ -192,6 +192,7 @@
             class="modal-input"
             minlength="2"
             maxlength="10"
+            pattern="[a-z]{4,8}"
             placeholder="Enter full name..."
             required
           />
@@ -207,6 +208,7 @@
             class="modal-input"
             placeholder="Enter email..."
             required
+            pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
           />
         </div>
       </div>
@@ -219,6 +221,7 @@
             id="user-card"
             class="modal-input"
             placeholder="Enter card.."
+            pattern="[0-9 ]*"
             required
           />
         </div>
