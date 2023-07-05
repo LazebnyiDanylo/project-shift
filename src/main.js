@@ -1,6 +1,5 @@
-<<<<<<< HEAD
+import  './button-up'
+
+import './mobile'
 
 import './modal'
-=======
-import './button-up'
->>>>>>> main

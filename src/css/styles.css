@@ -17,6 +17,6 @@
 /* modal */
 @import url('./modal.css');
 /* menu */
-@import url('mobile.modal.css');
+@import url('./mobile.modal.css');
 /* scroll btn */
 @import url('./button-up.css');
