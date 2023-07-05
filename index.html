@@ -1,0 +1,999 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link 
+      rel="tomato-first-icon" 
+      sizes="180x180" 
+      href="/project-shift/assets/tomato-first-2de78da5.png" 
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/project-shift/assets/apple-touch-icon-c001b115.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAMAAABEpIrGAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAC61BMVEUAAAD////////////////++PT97uD98eX++/n56+D5sHf8nT/8okH7t3X83cP++/f9+/rxrX37hy/9jiz9kST9kx/8mjH7vHz87d799vH3kVD7dRL9fhj+hiD9iyL9kin8kB37oT782LT+/v73sIv4ZAn8ZgL8bQj9dQ39ghn9jSj+kST9lib7t3L97N387+n0jl/1WQz6WgL8YwP9agP9dwz+iSP+ky79lCr8plH71LD9+PP++PP97uP86Nj518LwlnPpRxXzTwT7YgT8aAP+cwX9fQ7+ih7+kyz8mDT6tnP838X82Lr81rb85M3+/Pn9+PT7yKX7pmn7mEf8jzb7hir4dSLqRQ/aJQTgNgXzWQr8aQr+bgb9dAT+gBD9jib9kyv8lzH7mT/8lD78kDL7lzv61bH6yan8hzj9izr9ijr+ijr9hzf+hTT9eSzyWRvfNg/aLgfnShL0YRz6bBf8cgr9eQb9hQ7+kB39lyv7lTb7iiz5mlL64MjstIn2eib9fSv9gTT9gDT8fi38fSj8fCf7bx7yYB7kShTdPhDdQhDoUhjzZyX5ch78dAv9fQv9hhX9iRr8jST5qmT769v+//7kwZ7qcyX8bxf8cyL7cxv8dRz8dSD4aRXsXBnbShfMPhnKSC3SYU7dgHPuo5L4nnT6gzb8dA79cAT9fBD8ixn7n0D7zqH99u/13c/xf0X5bSb7cCv5cCr1cCvuay3jZzTYZkbPa1vIcWnKgHvWlpTgqKrmt7nrxMnwz9P0y8P1sI73ikn6dBj9dQj9gA79jCD7rGD84cj+/fz9/Pvzx7nmhGfccFPaeFzfj33ipZ/ovr3t0NLy3d715uf26On25uf14+T03+Dz3N7x297x2t7v0tHvuabzkF33cx77cwv9gRX74cr9+vv36+z05eb26uz79PX+/f3///7//v39+vr89vb58fP16ezy29vvt6nwjGH0dir4izj64Mr//v79+/z68PD43tf65d1/AsrRAAAABHRSTlMAAaKVrgW1DQAAAAFiS0dEAf8CLd4AAAAHdElNRQfnBh4MJTgx+MWLAAABUUlEQVQ4y2NgGASAkQBgYCIAGFgIAOIVsLKxc+BTwMnFzcPLx49TgYCgkLCIqJi4BC4FklLSMrJy8gqKSvzYFSirqKqpa2hqaevo6mF3g76BoZGxiamZuYWllTWGAmUbWzt7B0cnZxdXN3cPTy9vbx9fP3+EgoDAoOCQ0LDwiMio6JjYuPiExKTklNQ0hIL0jMys7JzcvPyCwqLiktKy8orKquqaWoSCuvqGxqbmlta29o7Oru6e3r7+CRMnTZ4yFa5g2vQZM2fOmj1n7rz5CxYuWrxk6bLlK1auWr1mLUzBuvUbNm7avGXrtu07du7avWfvvv0HDh46fOToseMnIApOnjp95uy58xcuXrp85crVa9dv3Lx1+87de/cfpD6EevPR4ydPnz16DrH0xcsTr16/efvu/YePnz7jie4vX799/3GClPRAvgJmAmCgcx1RAADzv4SxK2je1wAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNi0zMFQxMjozNzo1NiswMDowMFb/iT4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDYtMzBUMTI6Mzc6NTYrMDA6MDAnojGCAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAA8FBMVEUAAAD////////////////////99vD8zqX90aP+8OP5zK77gSH9jCH8o0n91q7++/f84NH3ejH7aAn+exL9kSn8u3n+7d7///7/+vf91738wZH3kljrSQ/xUwX8cgz+hBf8oEb8vYD8uH781rL53Mf5hzn9gjD9fyr3aB/lRA/lShDyZhr7fBf9hhb8iSL6v4n+/fz24dLzfDj4byb0cyvtczfcakfSblzgkojxsJ73nmf6gir7jCn9voP+8ub+/Pr0y77ssJ/wxbvz2tj15+j37u757/D47e/36ev01Mv0qH/3iDn7wpP9+/z76+b98uwITZC4AAAABXRSTlMAWf78U4FftrwAAAABYktHRAH/Ai3eAAAAB3RJTUUH5wYeDCU4MfjFiwAAAH5JREFUGNNjYCAIGNEAAxMaYGBlZWVj5+BkhQGQABc3Dy8fP5KAgKCQsIioGKs4REBCUkpaRlZOXkFRSVkcJKCiqqauoamlraOrp28AEjA0MjYxNTO3sLSytrG1AwrYOzg6Obu4url7eHp5+4ANhQNfP39WBmY0wMCCBgh7FgBa7Q4KgpDoPQAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAyMy0wNi0zMFQxMjozNzo1NiswMDowMFb/iT4AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMjMtMDYtMzBUMTI6Mzc6NTYrMDA6MDAnojGCAAAAV3pUWHRSYXcgcHJvZmlsZSB0eXBlIGlwdGMAAHic4/IMCHFWKCjKT8vMSeVSAAMjCy5jCxMjE0uTFAMTIESANMNkAyOzVCDL2NTIxMzEHMQHy4BIoEouAOoXEXTyQjWVAAAAAElFTkSuQmCC"
+    />
+    <link rel="manifest" href="data:application/manifest+json;base64,ewogICAgIm5hbWUiOiAiIiwKICAgICJzaG9ydF9uYW1lIjogIiIsCiAgICAiaWNvbnMiOiBbCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0xOTJ4MTkyLnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIxOTJ4MTkyIiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0sCiAgICAgICAgewogICAgICAgICAgICAic3JjIjogIi9hbmRyb2lkLWNocm9tZS0zODR4Mzg0LnBuZyIsCiAgICAgICAgICAgICJzaXplcyI6ICIzODR4Mzg0IiwKICAgICAgICAgICAgInR5cGUiOiAiaW1hZ2UvcG5nIgogICAgICAgIH0KICAgIF0sCiAgICAidGhlbWVfY29sb3IiOiAiI2ZmZmZmZiIsCiAgICAiYmFja2dyb3VuZF9jb2xvciI6ICIjZmZmZmZmIiwKICAgICJkaXNwbGF5IjogInN0YW5kYWxvbmUiCn0K" />
+    <link
+      rel="mask-icon"
+      href="/project-shift/assets/safari-pinned-tab-5b0899fe.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Veggie Boost</title>
+    
+    <script type="module" crossorigin src="/project-shift/assets/index-8071e0cb.js"></script>
+    <link rel="stylesheet" href="/project-shift/assets/index-68f7fe41.css">
+  </head>
+  <body>
+    <!-- header -->
+    <header class="header">
+    <div class="container header-container">
+        <nav class="header-navigation">
+            <ul class="header-list">
+                <li ><a href="#How-It-Works" class="nav-link">How It Works</a></li>
+                <li ><a href="#Vegetables" class="nav-link">Vegetables</a></li>
+                <li ><a href="#Contact" class="nav-link">Contacts</a></li>
+            </ul>
+                <a href="./index.html" class="logo"><svg class="logo_icon" width="16" height="16">
+                <use href="/project-shift/assets/icons-164ba665.svg#icon-logo"></use></svg><span class="header-text-logo">veggieboost</span>
+                </a>
+        </nav>
+        <button type="button" class="mobile-menu-open-btn js-open-menu">
+            <svg class="mobile-menu-open_icon" width="24" height="24"><use href="/project-shift/assets/icons-164ba665.svg#icon-gg_menu-burger"></use></svg>
+        </button>
+        <button type="button" class="mobile-menu-buy-btn" data-modal-open>
+            <svg class="mobile-menu-buy_icon" width="20" height="20"><use href="/project-shift/assets/icons-164ba665.svg#icon-shopping-cart"></use></svg>
+        </button>
+    </div>
+</header>
+
+    <main>
+      <!-- hero -->
+      <section class="section-hero">
+<div class="hero container">
+    <div class="hero-box">
+
+      <div class="global-box">
+  <ul class="hero-list">
+
+    <li class="hero-pfoto">
+       <a class="hero-link" href="">
+        <picture>
+          <source
+            srcset="/project-shift/assets/Ellipse-2user-2-desctop-8d3a4aab.png 1x, /project-shift/assets/Ellipse-2user-2-desctop-2x-715a7f89.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/project-shift/assets/Ellipse-2user-2-tablet-2f555ab6.png 1x, /project-shift/assets/Ellipse-2user-2-tablet-2x-1eba32cd.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="data:image/png;base64,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 1x, /project-shift/assets/Ellipse-2user-2-2x-8df6a3bf.png 2x"
+            media="(max-width: 768px)"
+          />
+
+          <img class="img-hero"
+
+          src="  ./img/hero/Ellipse-2user-2.png"
+          alt="girl"
+          width="40"
+          height="40"
+        />
+      </picture>
+       </a>
+      
+    </li>
+
+    <li  class="hero-pfoto">  
+      <a class="hero-link" href="">
+      <picture>
+      <source
+        srcset="/project-shift/assets/Ellipse-3user-3-desctop-66b76b26.png 1x, /project-shift/assets/Ellipse-3user-3-desctop-2x-4fe8a963.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="/project-shift/assets/ellipse-3user-3-tablet-55bd89dc.png 1x, /project-shift/assets/ellipse-3user-3-tablet-2x-a96ad567.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="data:image/png;base64,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 1x, /project-shift/assets/Ellipse3user-3-2x-807ef994.png 2x"
+        media="(max-width: 768px)"
+      />
+
+      <img class="img-hero"
+
+      src=" ./img/hero/Ellipse-3user-3.png"
+      alt="men"
+      width="40"
+      height="40"
+    />
+  </picture>
+</a>
+
+</li>
+
+    <li  class="hero-pfoto"> 
+     <a class="hero-link" href="">
+      <picture>
+      <source
+        srcset="/project-shift/assets/Ellipse-4user-4-dektop-1fb31cff.png 1x, /project-shift/assets/Ellipse-4user-4-dektop-1fb31cff.png 2x"
+        media="(min-width: 1200px)"
+      />
+      <source
+        srcset="/project-shift/assets/elipse-4elipse-4user-4-tablet-98286dd1.png 1x, /project-shift/assets/elipse-4elipse-4user-4-tablet-2x-26ed60d0.png 2x"
+        media="(min-width: 768px)"
+      />
+      <source
+        srcset="data:image/png;base64,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 1x, /project-shift/assets/Ellipse-4user-4-2x-0104c4e2.png 2x"
+        media="(max-width: 768px)"
+      />
+
+      <img class="img-hero"
+
+      src=" ./img/hero/Ellipse-4user-4.png "
+      alt="girl"
+      width="40"
+      height="40"
+    />
+  </picture>
+</a>
+</li>
+
+    <li  class="hero-pfoto">
+     <a class="hero-link" href="">
+<span class="reviews">2K</span>
+<span class="reviews">reviews</span>
+     </a>
+    </li>
+  </ul>
+
+
+<h1 class="hero-text">organic <span class="vegetables">vegetables</span> to your diet today!</h1>
+<p class="paragraf">Our expertly curated vegetable baskets are made with the freshest,
+    highest quality vegetables available. Fresh Harvest Box has got you covered.
+    Fresh, high-quality vegetables in expertly curated vegetable baskets delivered to you.</p>
+    <button type="button" class="hero-button-main" data-modal-open-hero>shop now</button>
+  </div>
+ <div class="global-div">
+         <a class="image" href="">
+
+          <picture>
+            <source
+              srcset="/project-shift/assets/imageIMG_9620-desktop-2bd05c48.png 1x, /project-shift/assets/imageIMG_9620-desktop-2x-7f97e61f.png 2x"
+              media="(min-width: 1280px)"
+            />
+            <source
+              srcset="/project-shift/assets/imageIMG_9620-tablet-e33657c9.png 1x, /project-shift/assets/imageIMG_9620-tablet-2x-e8c847da.png 2x"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="/project-shift/assets/imageIMG_9620-91b4af3a.png 1x, /project-shift/assets/imageIMG_9620-2x-a32c1ea9.png 2x"
+              media="(max-width: 768px)"
+            />
+      
+            <img class="girl"
+            src=" ./img/hero/imageIMG_9620.png"
+            alt="girl"
+         
+          />
+        </picture>
+         </a>
+       
+    
+
+    <div class="shop-now">
+    <div class="hero-btn"> <button class="hero-button-tex">#organic</button>
+          <button class="hero-button-tex">#products</button></div>
+        <div class="hero-btn">  <button class="hero-button-tex">#basket</button>
+          <button class="hero-button-tex">#vegetables</button></div>
+        </div>
+      </div>
+  </div>
+</section>
+
+      <!-- how it works -->
+      <section class="hiw" id="How-It-Works">
+  <div class="hiw-container container">
+    <div class="hiw-title-pic-container">
+      <h2 class="hiw-title">
+        To order your vegetable basket, simply follow these easy steps
+      </h2>
+      <a class="hiw-title-link" href="#">
+        <picture>
+          <source
+            srcset="/project-shift/assets/vegetables-desk-1x-0273b545.png 1x, /project-shift/assets/vegetables-desk-2x-5a31514b.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/project-shift/assets/vegetables-tab-1x-911d3ab7.png 1x, /project-shift/assets/vegetables-tab-2x-61278fbf.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/project-shift/assets/vegetables-mob-1x-112cea57.png 1x, /project-shift/assets/vegetables-mob-2x-7b6c3d2d.png 2x"
+            media="(max-width: 768px)"
+          />
+          <img
+            src="/project-shift/assets/vegetables-desk-1x-0273b545.png"
+            alt="computer programs"
+            width="410"
+            height="170"
+            class="vegetable-phone"
+          />
+        </picture>
+      </a>
+    </div>
+    <div class="hiw-text-container">
+      <p class="hiw-text">
+        Our baskets are assembled with care and delivered straight to your
+        doorstep, so you can enjoy the taste of fresh fruit without ever leaving
+        your home.
+      </p>
+      <p class="hiw-text">
+        Whether you're looking for a healthy snack or a thoughtful gift, our
+        fruit baskets are the perfect choice.
+      </p>
+    </div>
+    <div class="hiw-steps-container">
+      <h3 class="hiw-steps-title">3 Easy Steps for Buying Fresh Vegetables</h3>
+
+      <div class="ol-container">
+        <ol class="hiw-steps-list list">
+          <li class="hiw-steps-item">
+            <div class="hiw-steps-item-container">
+              <span class="circle">1</span>
+              <p class="hiw-steps-text">
+                Just choose the vegetable you want to order by clicking on the
+                checkboxes next to it.
+              </p>
+            </div>
+          </li>
+          <li class="hiw-steps-item">
+            <div class="hiw-steps-item-container">
+              <span class="circle">2</span>
+              <p class="hiw-steps-text">
+                Click on the basket and fill out the form.
+              </p>
+            </div>
+          </li>
+          <li class="hiw-steps-item">
+            <div class="hiw-steps-item-container">
+              <span class="circle">3</span>
+              <p class="hiw-steps-text">
+                Sit back and relax! Your fresh vegetables basket will be
+                delivered.
+              </p>
+            </div>
+          </li>
+        </ol>
+      </div>
+      <a class="hiw-steps-link" href="#">
+        <picture>
+          <source
+            srcset="/project-shift/assets/girl-desk-1x-da1588ee.png 1x, /project-shift/assets/girl-desk-2x-aada227f.png 2x"
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="/project-shift/assets/girl-tab-1x-43f19aed.png 1x, /project-shift/assets/girl-tab-2x-e0d2c831.png 2x"
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="/project-shift/assets/girl-mob-1x-c95d3605.png 1x, /project-shift/assets/girl-mob-2x-a830bae2.png 2x"
+            media="(max-width: 768px)"
+          />
+          <img
+            src="/project-shift/assets/girl-desk-1x-da1588ee.png"
+            alt="computer programs"
+            class="girl-mobile"
+          />
+        </picture>
+      </a>
+    </div>
+  </div>
+</section>
+
+
+      <!-- vegetables -->
+      <section class="vegetables-section section" id="Vegetables">
+  <div class="vegetables-container container">
+    <h2 class="vegetables-title">ORGANIC VEGETABLES</h2>
+    <p class="vegetables-text">
+      Our organic vegetables are hand-picked from local farms and delivered
+      straight to your doorstep, ensuring that you get the freshest and most
+      nutritious produce possible.
+    </p>
+    <div>
+      <ul class="vegetables-list list">
+        <li class="vegetables-item">
+          <a class="vegetables-link link" href="">
+            <div class="vegetables-img-wrapper">
+              <h3 class="vegetables-page-subtitles">Carrot</h3>
+              <p class="vegetables-subtext">Plant</p>
+                <picture>
+                  <source
+                    srcset="/project-shift/assets/carrot-5fc5410b.png 1x, /project-shift/assets/carrot@2x-08fb5144.png 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="/project-shift/assets/carrot-mobile-5523bf24.png 1x, /project-shift/assets/carrot-mobile@2x-c717ca0f.png 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/project-shift/assets/carrot-mobile-5523bf24.png"
+                    alt="Carrot"
+                    width="321"
+                    height="261"
+                  />
+                </picture>
+              <p class="vegetables-price">100 UAH / kg</p>
+            </div>
+          </a>
+        </li>
+        <li class="vegetables-item">
+          <a class="vegetables-link link" href="">
+            <div class="vegetables-img-wrapper">
+              <h3 class="vegetables-page-subtitles">Brussel sprouts</h3>
+              <p class="vegetables-subtext">Plant</p>
+                <picture>
+                  <source
+                    srcset="/project-shift/assets/brussel-5e0fd901.png 1x, /project-shift/assets/brussel@2x-03833648.png 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="/project-shift/assets/brussel-mobile-e29c6be3.png 1x, /project-shift/assets/brussel-mobile@2x-1d6dd853.png 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/project-shift/assets/brussel-mobile-e29c6be3.png"
+                    alt="Brussel sprouts"
+                    width="321"
+                    height="261"
+                  />
+                </picture>
+              <p class="vegetables-price">80 UAH / kg</p>
+            </div>
+          </a>
+        </li>
+        <li class="vegetables-item">
+          <a class="vegetables-link link" href="">
+            <div class="vegetables-img-wrapper">
+              <h3 class="vegetables-page-subtitles">Tomato</h3>
+              <p class="vegetables-subtext">Plant</p>
+              <div class="vegetables-wrap">
+                <picture>
+                  <source
+                    srcset="/project-shift/assets/tomato-d5ba6f12.png 1x, /project-shift/assets/tomato@2x-f9bb48a6.png 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="/project-shift/assets/tomato-mobile-a03da996.png 1x, /project-shift/assets/tomato-mobile@2x-5c15f65b.png 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/project-shift/assets/tomato-mobile-a03da996.png"
+                    alt="Tomato"
+                    width="321"
+                    height="261"
+                  />
+                </picture>
+              </div>
+              <p class="vegetables-price">40 UAH / kg</p>
+            </div>
+          </a>
+        </li>
+        <li class="vegetables-item">
+          <a class="vegetables-link link" href="">
+            <div class="vegetables-img-wrapper">
+              <h3 class="vegetables-page-subtitles">Eggplant</h3>
+              <p class="vegetables-subtext">Plant</p>
+              <div class="vegetables-wrap">
+                <picture>
+                  <source
+                    srcset="/project-shift/assets/eggplant-e279c1dc.png 1x, /project-shift/assets/eggplant@2x-0a432bc2.png 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="/project-shift/assets/eggplant-mobile-7974857d.png 1x, /project-shift/assets/eggplant-mobile@2x-efcdc91a.png 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/project-shift/assets/eggplant-mobile-7974857d.png"
+                    alt="Eggplant"
+                    width="321"
+                    height="261"
+                  />
+                </picture>
+              </div>
+              <p class="vegetables-price">60 UAH / kg</p>
+            </div>
+          </a>
+        </li>
+        <li class="vegetables-item">
+          <a class="vegetables-link link" href="">
+            <div class="vegetables-img-wrapper">
+              <h3 class="vegetables-page-subtitles">Sweet potatoes</h3>
+              <p class="vegetables-subtext">Plant</p>
+                <picture>
+                  <source
+                    srcset="/project-shift/assets/potatoes-91582c65.png 1x, /project-shift/assets/potatoes@2x-08d7f7e2.png 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="/project-shift/assets/potatoes-mobile-b0cf40a3.png 1x, /project-shift/assets/potatoes-mobile@2x-9c2aa99e.png 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/project-shift/assets/potatoes-mobile-b0cf40a3.png"
+                    alt="Sweet potatoes"
+                    width="321"
+                    height="261"
+                  />
+                </picture>
+              <p class="vegetables-price">80 UAH / kg</p>
+            </div>
+          </a>
+        </li>
+        <li class="vegetables-item">
+          <a class="vegetables-link link" href="">
+            <div class="vegetables-img-wrapper">
+              <h3 class="vegetables-page-subtitles">Leek</h3>
+              <p class="vegetables-subtext">Plant</p>
+              <picture>
+                <source
+                  srcset="/project-shift/assets/leek-0b5db439.png 1x, /project-shift/assets/leek@2x-d461148e.png 2x"
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="/project-shift/assets/leek-mobile-acf10809.png 1x, /project-shift/assets/leek-mobile@2x-e852da45.png 2x"
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="/project-shift/assets/leek-mobile-acf10809.png"
+                  alt="Leek"
+                  width="321"
+                  height="261"
+                />
+              </picture>
+              <p class="vegetables-price">50 UAH / kg</p>
+            </div>
+          </a>
+        </li>
+        <li class="vegetables-item">
+          <a class="vegetables-link link" href="">
+            <div class="vegetables-img-wrapper">
+              <h3 class="vegetables-page-subtitles">Mushrooms</h3>
+              <p class="vegetables-subtext">Plant</p>
+                <picture>
+                  <source
+                    srcset="/project-shift/assets/mushrooms-009d96e8.png 1x, /project-shift/assets/mushrooms@2x-b7158bd7.png 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="/project-shift/assets/mushrooms-mobile-cefd87fc.png 1x, /project-shift/assets/mushrooms-mobile@2x-6f7ee010.png 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/project-shift/assets/mushrooms-mobile-cefd87fc.png"
+                    alt="Mushrooms"
+                    width="321"
+                    height="261"
+                  />
+                </picture>
+              <p class="vegetables-price">40 UAH / kg</p>
+            </div>
+          </a>
+        </li>
+        <li class="vegetables-item">
+          <a class="vegetables-link link" href="">
+            <div class="vegetables-img-wrapper">
+              <h3 class="vegetables-page-subtitles">Corn</h3>
+              <p class="vegetables-subtext">Plant</p>
+                <picture>
+                  <source
+                    srcset="/project-shift/assets/corn-01a9dcf5.png 1x, /project-shift/assets/corn@2x-f1d903d0.png 2x"
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="/project-shift/assets/corn-mobile-5a9fa3c5.png 1x, /project-shift/assets/corn-mobile@2x-80012bf3.png 2x"
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/project-shift/assets/corn-mobile-5a9fa3c5.png"
+                    alt="Corn"
+                    width="321"
+                    height="261"
+                  />
+                </picture>
+              <p class="vegetables-price">60 UAH / kg</p>
+            </div>
+          </a>
+        </li>
+        <li class="vegetables-item">
+          <a class="vegetables-link link" href="">
+            <div class="vegetables-img-wrapper">
+              <h3 class="vegetables-page-subtitles">Radish</h3>
+              <p class="vegetables-subtext">Plant</p>
+                <picture>
+                  <source
+                    srcset="/project-shift/assets/radish-desctop-05ebe5ce.png 1x, /project-shift/assets/radish-desctop@2x-7f2fd4f3.png 2x"
+                    media="(min-width: 1280px)"
+                  />
+                  <img
+                    src="/project-shift/assets/radish-desctop-05ebe5ce.png"
+                    alt="Radish"
+                    width="321"
+                    height="261"
+                  />
+                </picture>
+              <p class="vegetables-price">90 UAH / kg</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+
+      <button type="button" class="vegetables-btn" data-modal-open-veg>
+        <span class="vegetables-btn-span">
+          <svg class="vegetables-btn-icon" width="14" height="14">
+            <use href="/project-shift/assets/icons-164ba665.svg#icon-arrow-button"></use>
+          </svg>
+          <span class="vegetables-btn-text">ORDER</span>
+        </span>
+      </button>
+    </div>
+  </div>
+</section>
+
+
+      <!-- we will call you -->
+      <section class="recall">
+  <div class="recall-container">
+    <div class="recall-content">
+      <h2 class="recal-title">Fresh Harvest Box has got you covered</h2>
+      <p class="recall-item">
+        Our boxes are packed with delicious, nutritious vegetables, perfect for
+        anyone looking to eat healthier or support local farmers. Order your box
+        today and start enjoying the best that nature has to offer!
+      </p>
+      <form class="recall-form">
+        <label>
+          <input
+            class="recall-input"
+            type="tel"
+            name="phone"
+            placeholder="+380()"
+            pattern="[\+]\d{3}\s[\(]\d{2}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}"
+            required
+            title="+380 (97) 000-00-00"
+        /></label>
+        <button class="btn-recall" type="submit">Recall</button>
+      </form>
+    </div>
+    <div class="call-picture">
+      <picture>
+        <source
+          srcset="/project-shift/assets/recall_desk_1x-923f12a3.png 1x, /project-shift/assets/recall_desk_2x-01e6f4c9.png 2x"
+          media="(min-width: 1280px)" />
+        <source
+          srcset="/project-shift/assets/recall_tab_1x-ac6b51ee.png 1x, /project-shift/assets/recall_tab_2x-a50aeb84.png 2x"
+          media="(min-width: 768px)" />
+        <source
+          srcset="/project-shift/assets/recall_mob_1x-ae465349.png 1x, /project-shift/assets/recall_mob_2x-7ca9ab50.png 2x"
+          media="(min-width: 320px)" />
+        <img
+          src="/project-shift/assets/recall_tab_1x-ac6b51ee.png"
+          alt="Girl with vegetables"
+          width="629"
+      /></picture>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!-- footer -->
+    <footer class="footer">
+  <div class="container footer-wrap">
+    <div class="footer-nav-wrap">
+      <div class="footer-img-wrap">
+        <picture>
+          <source
+            srcset="/project-shift/assets/mobile-3726c7be.png 1x, /project-shift/assets/mobile@2x-00b56166.png 2x"
+            media="(max-width: 767px)"
+          />
+
+          <source
+            srcset="/project-shift/assets/tab-desk-c6309e4c.png 1x, /project-shift/assets/tab-desk@2x-f9dbabc2.png 2x"
+            media="(min-width: 768px)"
+          />
+
+          <img src="/project-shift/assets/mobile-3726c7be.png" alt="Broccoli" />
+        </picture>
+
+        <a class="footer-logo" href="./index.html">
+          <svg class="logo-icon" width="16px" height="16px">
+            <use href="/project-shift/assets/icons-164ba665.svg#icon-logo"></use>
+          </svg>
+          <span class="footer-text-logo">veggieboost</span>
+        </a>
+      </div>
+
+      <nav class="footer-nav">
+        <ul class="footer-nav-list">
+          <li>
+            <a class="footer-nav-link" href="#How-It-Works">How It Works</a>
+          </li>
+          <li><a class="footer-nav-link" href="#Vegetables">Vegetables</a></li>
+          <li><a class="footer-nav-link" href="#Contact">Contacts</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="social-address-wrap">
+      <ul class="social-list">
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.facebook.com/"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+          >
+            <svg class="social-icon" width="40px" height="40px">
+              <use href="/project-shift/assets/icons-164ba665.svg#icon-facebook"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.instagram.com/"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+          >
+            <svg class="social-icon" width="40px" height="40px">
+              <use href="/project-shift/assets/icons-164ba665.svg#icon-instagram"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="social-item">
+          <a
+            class="social-link"
+            href="https://www.youtube.com/"
+            target="_blank"
+            rel="noreferrer noopener nofollow"
+          >
+            <svg class="social-icon" width="40px" height="40px">
+              <use href="/project-shift/assets/icons-164ba665.svg#icon-youtube"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    
+      <address class="footer-contacts" id="Contact">
+        <ul class="contacts-list">
+          <li class="footer-contacts-item footer-tel">
+            <a class="contacts-link" href="tel:+380(68)443-94-26"
+              >+380 (68) 443-94-26</a
+            >
+          </li>
+          <li class="footer-contacts-item">
+            <a
+              class="footer-contacts-link"
+              href="https://goo.gl/maps/oiPTx2R9hLhPcvdYA"
+              target="_blank"
+              rel="noreferrer noopener nofollow"
+              >1678 S. Pioneer Road Salt Lake City <br />UT 84104</a
+            >
+          </li>
+        </ul>
+      </address>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- modal -->
+    <div class="backdrop is-hidden" data-modal>
+  <div class="modal-wrap">
+    <div class="modal">
+      <button type="button" class="modal-close-btn" data-modal-close>
+        <svg class="modal-close-btn-icon" width="24" height="24">
+          <use href="/project-shift/assets/icons-164ba665.svg#icon-close-button"></use>
+        </svg>
+      </button>
+      <h2 class="modal-top-text">Your Order</h2>
+
+      <ul class="modal-list">
+        <li class="modal-item">
+          <div class="modal-item-box">
+            <input
+              type="checkbox"
+              id="cabbage-basket"
+              name="product"
+              value="cabbage"
+              class="modal-check visually-hidden"
+            />
+            <label for="cabbage-basket" class="check-cast">
+              <span class="label-check-cast">
+                <svg class="check-icon" width="8" height="8">
+                  <use href="/project-shift/assets/icons-164ba665.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+
+            <div class="modal-text-box">
+              <h3 class="modal-title">Cabbage Basket</h3>
+              <p class="modal-text">Plant</p>
+            </div>
+
+            <picture>
+              <source
+                srcset="/project-shift/assets/cabbage-mob-66ae9773.png 1x, /project-shift/assets/cabbage-mob-2x-4fa25390.png 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="/project-shift/assets/cabbage-f41759ca.png 1x, /project-shift/assets/cabbage-2x-90c294f8.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/project-shift/assets/cabbage-tab-dc25b034.png 1x, /project-shift/assets/cabbage-tab-2x-b0cfe336.png 2x"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="modal-img"
+                src="/project-shift/assets/cabbage-f41759ca.png"
+                alt="cabbage"
+              />
+            </picture>
+          </div>
+        </li>
+
+        <li class="modal-item">
+          <div class="modal-item-box">
+            <input
+              type="checkbox"
+              id="tomato-basket"
+              name="product"
+              value="tomato"
+              class="modal-check visually-hidden"
+            />
+            <label for="tomato-basket" class="check-cast">
+              <span class="label-check-cast">
+                <svg class="check-icon" width="8" height="8">
+                  <use href="/project-shift/assets/icons-164ba665.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+
+            <div class="modal-text-box">
+              <h3 class="modal-title">Tomato Basket</h3>
+              <p class="modal-text">Plant</p>
+            </div>
+
+            <picture>
+              <source
+                srcset="data:image/png;base64,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 1x, /project-shift/assets/tomato-mob-2x-9a190d6f.png 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="/project-shift/assets/tomato-6c667d9d.png 1x, /project-shift/assets/tomato-2x-47082446.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/project-shift/assets/tomato-tab-5d579c29.png 1x, /project-shift/assets/tomato-tab-2x-b5d151e2.png 2x"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="modal-img"
+                src="/project-shift/assets/tomato-6c667d9d.png"
+                alt="tomato"
+              />
+            </picture>
+          </div>
+        </li>
+        <li class="modal-item">
+          <div class="modal-item-box">
+            <input
+              type="checkbox"
+              id="vegetables-basket"
+              name="product"
+              value="vegetables"
+              class="modal-check visually-hidden"
+            />
+            <label for="vegetables-basket" class="check-cast">
+              <span class="label-check-cast">
+                <svg class="check-icon" width="8" height="8">
+                  <use href="/project-shift/assets/icons-164ba665.svg#icon-check"></use>
+                </svg>
+              </span>
+            </label>
+
+            <div class="modal-text-box">
+              <h3 class="modal-title">Vegetables Basket</h3>
+              <p class="modal-text">Plant</p>
+            </div>
+
+            <picture>
+              <source
+                srcset="/project-shift/assets/vegetables-mob-33f8080f.png 1x, /project-shift/assets/vegetables-mob-2x-08e803d8.png 2x"
+                media="(max-width: 767px)"
+              />
+              <source
+                srcset="/project-shift/assets/vegetables-c75636a1.png 1x, /project-shift/assets/vegetables-2x-576a33ba.png 2x"
+                media="(min-width: 1280px)"
+              />
+              <source
+                srcset="/project-shift/assets/vegetables-tab-57757090.png 1x, /project-shift/assets/vegetables-tab-2x-b0b19175.png 2x"
+                media="(min-width: 768px)"
+              />
+
+              <img
+                class="modal-img"
+                src="/project-shift/assets/vegetables-c75636a1.png"
+                alt="vegetables"
+              />
+            </picture>
+          </div>
+        </li>
+      </ul>
+
+      <form class="modal-form">
+        <div class="modal-field">
+          <label for="user-name" class="input-label"></label>
+          <div class="input-wrap">
+            <input
+              type="text"
+              name="user-name"
+              id="user-name"
+              class="modal-input"
+              minlength="2"
+              maxlength="10"
+              pattern="[a-z]{4,8}"
+              placeholder="Enter full name..."
+              required
+            />
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="user-email" class="input-label"></label>
+          <div class="input-wrap">
+            <input
+              type="email"
+              name="user-email"
+              id="user-email"
+              class="modal-input"
+              placeholder="Enter email..."
+              required
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})"
+            />
+          </div>
+        </div>
+        <div class="modal-field">
+          <label for="user-card" class="input-label"></label>
+          <div class="input-wrap">
+            <input
+              type="number"
+              name="user-card"
+              id="user-card"
+              class="modal-input"
+              placeholder="Enter card.."
+              required
+            />
+          </div>
+        </div>
+        <div class="modal-field-comment">
+          <label for="user-comment" class="input-label"></label>
+
+          <textarea
+            name="user-comment"
+            id="user-comment"
+            class="modal-comment"
+            placeholder="Enter comments..."
+          ></textarea>
+        </div>
+
+        <button type="submit" class="modal-send-btn">Submit</button>
+      </form>
+      <picture class="girl-img">
+        <source
+          srcset="/project-shift/assets/girl-7510824d.png 1x, /project-shift/assets/girl-2x-e5c146fd.png 2x"
+          media="(min-width: 1280px)"
+        />
+        <source
+          srcset="/project-shift/assets/girl-7510824d.png 1x, /project-shift/assets/girl-2x-e5c146fd.png 2x"
+          media="(min-width: 768px)"
+        />
+        <img
+          src="../img/modal-img/girl.png"
+          alt="girl"
+          width="444"
+          height="413"
+        />
+      </picture>
+    </div>
+  </div>
+</div>
+
+
+    <!-- menu -->
+    <div id="menu" class="modal-menu js-menu-container">
+  <div class="mobil-menu-container">
+    <div class="logo">
+      <div class="modal-logo"></div>
+      <svg class="logo-icon" width="16" height="16">
+        <use href="../img/icons.svg#icon-logo"></use>
+      </svg>
+      <span class="logo-text">VEGGIEBOOST</span>
+
+      <button type="button" class="menu-button js-close-menu">
+        <svg class="icon-modal-menu" width="24" height="24">
+          <use href="../img/icons.svg#icon-close-button"></use>
+        </svg>
+      </button>
+    </div>
+  </div>
+  <div class="modal-menu-link">
+    <nav class="modal-menu-list">
+      <ul class="list-nav-modal list">
+        <li class="link-contact">
+          <a class="link-modal" href="#How-It-Works">How It Works</a>
+        </li>
+        <li class="link-contact">
+          <a class="link-modal" href="#Vegetables">Vegetables</a>
+        </li>
+        <li class="link-contact">
+          <a class="link-modal" href="#Contact">Contacts</a>
+        </li>
+      </ul>
+      <button
+        id="menu-toggle"
+        type="button"
+        class="shopping-link"
+        data-modal-open-menu
+      >
+        <svg class="icon-basket" width="20" height="20">
+          <use href="../img/icons.svg#icon-shopping-cart"></use>
+        </svg>
+      </button>
+    </nav>
+  </div>
+</div>
+
+
+    <!-- scroll btn -->
+    
+    <button class="btn-up" type="button" aria-label="To-Top">
+      <svg class="btn-up__icon" width="20" height="10">
+            <use href="/project-shift/assets/icons-164ba665.svg#icon-arrow-button"></use>
+          </svg>
+    </button>
+    
+
+    
+    
+
+    
+    
+  </body>
+</html>
