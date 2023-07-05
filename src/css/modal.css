@@ -107,8 +107,6 @@
  align-items: center;
  justify-content: center;
  fill: transparent;
-
-
 }
 
 .modal-check:checked + .check-cast span {
