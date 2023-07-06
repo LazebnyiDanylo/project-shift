@@ -51,6 +51,7 @@
 .hiw-steps-container::before {
   content: '';
   position: absolute;
+  z-index: 0;
   top: 0;
   left: 0;
   width: 100%;
@@ -105,6 +106,11 @@
 }
 .hiw-steps-text {
   width: 176px;
+}
+
+.girl-mobile {
+  position: relative;
+  z-index: 1;
 }
 
 @media screen and (max-width: 375px) {

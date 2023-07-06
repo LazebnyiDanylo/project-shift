@@ -1,7 +1,9 @@
-
 const btnToUp = document.querySelector('.btn-up');
 btnToUp.addEventListener('click', () => {
-   window.scrollTo(0, 0);
+   window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+   });
 });
 
 const btnScroll = document.querySelector('.btn-up');
