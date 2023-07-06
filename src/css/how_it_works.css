@@ -11,7 +11,7 @@
 .hiw-title {
   margin-bottom: 20px;
   color: var(--title-color);
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 28px;
   font-weight: 500;
   line-height: 1.14;
@@ -31,7 +31,7 @@
 }
 .hiw-text {
   color: var(--title-color);
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.56px;
@@ -65,7 +65,7 @@
 .hiw-steps-title {
   margin-bottom: 40px;
   color: var(--title-color);
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 24px;
   font-weight: 500;
   line-height: 1.17;
@@ -81,7 +81,7 @@
 
 .hiw-steps-item {
   color: var(--title-color);
-  text-shadow: 0px 4px 70px 0px rgba(0, 0, 0, 0.1);
+  text-shadow: 0px 4px 70px rgba(0, 0, 0, 0.1);
   font-size: 14px;
   line-height: 1.29;
   letter-spacing: -0.56px;

@@ -22,35 +22,51 @@ img {
   position: fixed;
   bottom: 5px;
   right: 10px;
+}
 
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .btn-up {
     width: 60px;
     height: 60px;
     bottom: 30px;
   }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .btn-up {
     width: 80px;
     height: 80px;
     right: 40px;
   }
 }
+
 .btn-hidden {
   opacity: 0;
 }
 .btn-up__icon {
-
   transform: rotate(225deg);
   fill: var(--lite-green-color);
   stroke: black;
+}
 
-   @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
+  .btn-up {
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+  }
+  .btn-up__icon {
     width: 25px;
     height: 15px;
-    
   }
-  @media screen and (min-width: 1280px) {
+}
+@media screen and (min-width: 1280px) {
+  .btn-up {
+    width: 80px;
+    height: 80px;
+    right: 40px;
+  }
+  .btn-up__icon {
     width: 30px;
     height: 20px;
-    
   }
 }
