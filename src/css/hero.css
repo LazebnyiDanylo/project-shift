@@ -3,13 +3,15 @@ img {
 }
 .section-hero {
   background-color: var(--green-color);
+  padding-top: 48px;
+  padding-bottom: 20px;
 }
 
 .hero {
   max-width: 375px;
-  padding-top: 48px;
-  padding-bottom: 20px;
   height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .hero-list {
@@ -103,11 +105,6 @@ img {
 .vegetables {
   font-style: italic;
   color: var(--lite-green-color);
-}
-
-<<<<<<< HEAD =======>>>>>>>main .hero {
-  padding-top: 48px;
-  padding-left: 20px;
 }
 
 .hero-text {
@@ -236,9 +233,15 @@ img {
 }
 
 @media screen and (min-width: 768px) {
+  .section-hero {
+    padding-top: 64px;
+    padding-bottom: 32px;
+  }
+
   .hero {
     max-width: 768px;
-    padding: 64px 32px 32px 32px;
+    padding-left: 32px;
+    padding-right: 32px;
   }
 
   .hero-text {
@@ -307,8 +310,11 @@ img {
 }
 
 @media screen and (min-width: 1280px) {
-  .hero {
+  .section-hero {
     padding-top: 132px;
+  }
+
+  .hero {
     max-width: 1280px;
   }
 
